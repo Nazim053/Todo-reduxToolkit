@@ -1,0 +1,37 @@
+
+.blockInput {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 700px;
+    height: 50px;
+}
+
+
+.inputPost {
+    width: 450px;
+    background-color: rgba(255, 254, 254, 0.681);
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 3px 10px rgb(44, 35, 169);
+    transition: 0.7s;
+}
+
+
+.inputPost:hover {
+    box-shadow: 0px 3px 10px rgb(169, 118, 35);
+}
+
+
+.buttonPost {
+width:200px;
+border: none;
+border-radius: 5px;
+box-shadow: 0px 3px 10px rgb(44, 35, 169);
+transition: 0.7s;
+}
+
+
+.buttonPost:hover {
+    box-shadow: 0px 3px 10px rgb(169, 118, 35);
+}

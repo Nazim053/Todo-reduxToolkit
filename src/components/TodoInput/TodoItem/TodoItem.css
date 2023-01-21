@@ -1,0 +1,24 @@
+
+
+.inputTask {
+    zoom: 2;
+}
+
+.taskText {
+    font-size: 40px;
+    color:  black !important;
+    padding-left: 20px;
+}
+
+
+.deleteTask {
+    background-color: rgba(127, 126, 203, 0.932);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    padding: 5px;
+    height: 40px;
+    font-size: 35px;
+    border-radius: 20px;
+}
