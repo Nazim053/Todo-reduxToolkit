@@ -1,21 +1,23 @@
+import { useState } from "react";
 import { useSelector } from "react-redux";
 import TodoItem from "../TodoItem/TodoItem";
-import  './TodoList.css'
+import "./TodoList.css";
 
 const TodoList = () => {
 
-  const todos = useSelector(state => state.todos.todos)
+  const todos = useSelector((state) => state.todos.todos);
+
+
 
 
   return (
+    <>
       <ul className="todoList">
-      {todos.map((todo) => (
-        <TodoItem
-          key={todo.id}
-          {...todo}
-        />
-      ))} 
-    </ul>
+        {todos.map((todo) => (
+          <TodoItem key={todo.id} {...todo} />
+        ))}
+      </ul>
+    </>
   );
 };
 

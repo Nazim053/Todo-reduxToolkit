@@ -5,6 +5,9 @@ import './TodoItem.css'
 const TodoItem = ({ id, text, completed }) => {
   const dispatch = useDispatch();
 
+
+  
+
   return (
     <li className="todoLi">
       <div>
