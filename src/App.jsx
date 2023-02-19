@@ -1,15 +1,13 @@
 import TodoList from "./components/TodoInput/TodoList/TodoList";
 import "./App.css";
 import InputField from "./components/TodoInput/inputField/inputField";
-import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { storageTask } from "./store/todoSlice";
 
 const App = () => {
+  const dispatch = useDispatch();
 
-  const dispatch = useDispatch()
-
-      dispatch(storageTask())
+  dispatch(storageTask());
 
   return (
     <div className="App">

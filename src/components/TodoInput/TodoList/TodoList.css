@@ -1,23 +1,19 @@
-
-
 .todoList {
-    height: 250px;  
-    overflow-y: auto;  
-    padding:  0px 40px;
+  height: 250px;
+  overflow-y: auto;
+  padding: 0px 40px;
 }
 
-
-
 .todoList::-webkit-scrollbar {
-    width: 5px;               /* ширина всей полосы прокрутки */
-  }
-  
-  .todoList::-webkit-scrollbar-track {
-    background: rgb(194, 191, 242);        /* цвет зоны отслеживания */
-  }
-  
-  .todoList::-webkit-scrollbar-thumb {
-    background-color: rgb(65, 98, 218);    /* цвет бегунка */
-    border-radius: 20px;       /* округлось бегунка */
-    border: 1px solid rgb(76, 92, 232);  /* отступ вокруг бегунка */
-  }
+  width: 5px; 
+}
+
+.todoList::-webkit-scrollbar-track {
+  background: rgb(194, 191, 242); 
+}
+
+.todoList::-webkit-scrollbar-thumb {
+  background-color: rgb(65, 98, 218); 
+  border-radius: 20px; 
+  border: 1px solid rgb(76, 92, 232); 
+}

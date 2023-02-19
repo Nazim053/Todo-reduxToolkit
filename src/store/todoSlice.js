@@ -15,6 +15,7 @@ const todoSlice = createSlice({
         if (a !== " ") {
           a[0].style.display = "none";
         }
+
         state.todos.push({
           id: id,
           text: action.payload.text,
@@ -39,6 +40,7 @@ const todoSlice = createSlice({
     },
 
     removeTodo(state, action) {
+      localStorage.removeItem(action.payload.id);
       state.todos = state.todos.filter((todo) => todo.id !== action.payload.id);
     },
     toggleTodoComplete(state, action) {
@@ -50,5 +52,6 @@ const todoSlice = createSlice({
   },
 });
 
-export const { addTodo, removeTodo, toggleTodoComplete, storageTask } = todoSlice.actions;
+export const { addTodo, removeTodo, toggleTodoComplete, storageTask } =
+  todoSlice.actions;
 export default todoSlice.reducer;

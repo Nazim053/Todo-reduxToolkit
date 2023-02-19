@@ -1,24 +1,60 @@
-
-
 .inputTask {
-    zoom: 2;
+  zoom: 2;
+}
+
+.todoList {
+  max-width: 600px;
+  height: 50px;
 }
 
 .taskText {
-    font-size: 40px;
-    color:  black !important;
-    padding-left: 20px;
+  font-size: 40px;
+  color: black !important;
+  padding-left: 20px;
 }
 
-
 .deleteTask {
-    background-color: rgba(127, 126, 203, 0.932);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  padding: 5px;
+  height: 40px;
+  font-size: 35px;
+  border-radius: 20px;
+}
+
+@media (max-width: 700px) {
+  .inputTask {
+    zoom: 1.3;
+  }
+
+  .taskText {
+    font-size: 25px;
+    color: black !important;
+    padding-left: 20px;
+  }
+}
+
+@media (max-width: 550px) {
+  .inputTask {
+    zoom: 1;
+  }
+
+  .taskText {
+    font-size: 20px;
+    color: black !important;
+    padding-left: 20px;
+  }
+
+  .deleteTask {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40px;
+    width: 30px;
     padding: 5px;
-    height: 40px;
-    font-size: 35px;
+    height: 30px;
+    font-size: 30px;
     border-radius: 20px;
+  }
 }

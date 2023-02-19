@@ -1,37 +1,90 @@
-
 .blockInput {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 700px;
+  height: 50px;
+}
+
+.inputPost {
+  width: 450px;
+  background-color: rgba(255, 254, 254, 0.681);
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 3px 10px rgb(44, 35, 169);
+  transition: 0.7s;
+}
+
+.inputPost:hover {
+  box-shadow: 0px 3px 10px rgb(169, 118, 35);
+}
+
+.buttonPost {
+  width: 200px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 3px 10px rgb(44, 35, 169);
+  transition: 0.7s;
+}
+
+.buttonPost:hover {
+  box-shadow: 0px 3px 10px rgb(169, 118, 35);
+}
+
+@media (max-width: 700px) {
+  .blockInput {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 700px;
+    width: 550px;
     height: 50px;
-}
+  }
 
-
-.inputPost {
-    width: 450px;
+  .inputPost {
+    width: 370px;
     background-color: rgba(255, 254, 254, 0.681);
     border: none;
     border-radius: 5px;
-    box-shadow: 0px 3px 10px rgb(44, 35, 169);
+    font-size: 25px;
+    box-shadow: 0px 3px 10px rgb(44 35 169);
     transition: 0.7s;
+  }
+
+  .buttonPost {
+    width: 150px;
+    border: none;
+    font-size: 25px;
+    border-radius: 5px;
+    box-shadow: 0px 3px 10px rgb(44 35 169);
+    transition: 0.7s;
+  }
 }
 
+@media (max-width: 550px) {
+  .blockInput {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 400px;
+    height: 50px;
+  }
 
-.inputPost:hover {
-    box-shadow: 0px 3px 10px rgb(169, 118, 35);
-}
+  .inputPost {
+    width: 280px;
+    background-color: rgba(255, 254, 254, 0.681);
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    box-shadow: 0px 3px 10px rgb(44 35 169);
+    transition: 0.7s;
+  }
 
-
-.buttonPost {
-width:200px;
-border: none;
-border-radius: 5px;
-box-shadow: 0px 3px 10px rgb(44, 35, 169);
-transition: 0.7s;
-}
-
-
-.buttonPost:hover {
-    box-shadow: 0px 3px 10px rgb(169, 118, 35);
+  .buttonPost {
+    width: 100px;
+    border: none;
+    font-size: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 3px 10px rgb(44 35 169);
+    transition: 0.7s;
+  }
 }
